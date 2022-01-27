@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 public class RabbitMQConfiguration {
  public static final String ROUTING_A="routing.A";
  public static final String ROUTING_B="routing.B";
-//comment
+//comment with new branch
  @Bean
    Queue queueA()
    {
