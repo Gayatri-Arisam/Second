@@ -9,7 +9,7 @@ public class ProducerRabbitmqApplication {
 	
 	
 	public static void main(String[] args) {
-	System.out.println("Hai");
+	System.out.println("Hai All");
 		SpringApplication.run(ProducerRabbitmqApplication.class, args);
 	}
 
