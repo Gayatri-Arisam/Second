@@ -6,7 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ProducerRabbitmqApplication {
 //This is a sample
+	
+	
 	public static void main(String[] args) {
+	System.out.println("Hai");
 		SpringApplication.run(ProducerRabbitmqApplication.class, args);
 	}
 
