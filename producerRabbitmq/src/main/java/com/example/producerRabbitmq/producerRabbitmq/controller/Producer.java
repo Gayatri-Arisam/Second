@@ -35,9 +35,7 @@ rabbitTemplate.convertAndSend("queue.AA",message);
 	 * message1=messageConverter.toMessage(message, messageProperties);
 	 * rabbitTemplate.send(exchange.getName(),"",message1);
 	 */
-	
-	
-	return "Message sent successfully Yahoo";
+		return "Message sent successfully Yahoo";
 }
 }
 
