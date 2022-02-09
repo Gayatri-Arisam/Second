@@ -23,15 +23,21 @@ private HeadersExchange exchange;
 public String send(@PathVariable(value="message") String message)
 {
 //rabbitTemplate.convertAndSend(exchange.getName(),"routing.B",message);
-	MessageProperties messageProperties=new MessageProperties();
-	messageProperties.setHeader("colour", message);
-	MessageConverter messageConverter=new SimpleMessageConverter();
-	Message message1=messageConverter.toMessage(message, messageProperties);
-	rabbitTemplate.send(exchange.getName(),"",message1);
+
+
+
+rabbitTemplate.convertAndSend("queue.AA",message);
+	/*
+	 * MessageProperties messageProperties=new MessageProperties();
+	 * 
+	 * messageProperties.setHeader("colour", message); MessageConverter
+	 * messageConverter=new SimpleMessageConverter(); Message
+	 * message1=messageConverter.toMessage(message, messageProperties);
+	 * rabbitTemplate.send(exchange.getName(),"",message1);
+	 */
 	
 	
-	
-	return "Message sent successfully";
+	return "Message sent successfully Yahoo";
 }
 }
 

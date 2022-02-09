@@ -17,7 +17,7 @@ public class RabbitMQConfiguration {
  @Bean
    Queue queueA()
    {
-    return new Queue("queue.AA",false);
+    return new AnonymousQueue();
    }
 @Bean
 Queue queueB()
